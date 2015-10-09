@@ -32,8 +32,6 @@ function ipAddressReceived(opts, ipAddress, data, next) {
     }
   };
 
-  console.log(params);
-
   route53.changeResourceRecordSets(params, next);
 }
 
